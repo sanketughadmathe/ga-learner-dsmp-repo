@@ -54,7 +54,7 @@ percentage_nse = loan_approved_nse/Loan_Status *100
 # code starts here
 
 loan_term = banks['Loan_Amount_Term'].apply(lambda x: x/12)
-big_loan_term = (loan_term>=25).value_counts()[1]
+big_loan_term = (loan_term>=25).sum()
 
 # code ends here
 
